@@ -229,7 +229,7 @@ class Section3:
             answer["is_precision_higher_than_recall"]=1
         else:
             answer["is_precision_higher_than_recall"]=0
-        answer['explain_is_precision_higher_than_recall']='Testing purpose'
+        answer['explain_is_precision_higher_than_recall']="No its not, well the model is effective at identifying the most of the positive cases(0's as 0's) and (1's as 1's) but at the cost of incorrectly classifying many negative cases as positive(0's as 1's) and (1's as 0's)"
         clf.fit(X,y)
         y_pred_train=clf.predict(X)
         answer['confusion_matrix_train']=confusion_matrix(y_pred_train,y)
