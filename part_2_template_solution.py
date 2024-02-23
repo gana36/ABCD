@@ -64,7 +64,7 @@ class Section2:
         NDArray[np.floating],
         NDArray[np.int32],
     ]:
-        Xtrain, ytrain, Xtest, ytest = u.prepare_data()
+        #Xtrain, ytrain, Xtest, ytest = u.prepare_data()
         
         answer = {}
         answer["nb_classes_train"] = len(np.unique(ytrain))
